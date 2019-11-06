@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var grades = {'egoing': 10, 'k8805': 6, 'sorialgi': 80};
+        for(key in grades) {
+            document.write("key : "+key+" value : "+grades[key]+"<br />");
+        }
+//        반복문 안에 key를 담으면 key가 출력이 되고
+//        변수값-grades[key]를 하게되면 value가 출력된다
+        
+        var grades = {'egoing': 10, 'k8805': 6, 'sorialgi': 80};
+        for(key in grades) {
+            document.write("<li>key : "+key+" value : "+grades[key]+"</li>");
+        }
+//        스크립트 태그 위아래에 ul태그를 안썻지만 스크립트태그 위아래에 ul태그를 쓴 뒤에 문자를 쓰는 document.write안에 "<li>"를 쓰게되면 ul태그 밑에 있는 리스트를 만들 수 있다
+        
+//        이 for in 문을 사용하게되면 객체와 마찬가지로 배열도 조건문에서 하나씩 값을 출력할 수 있다
+    </script>
+</body>
+</html>
