@@ -16,6 +16,22 @@
         for(var i = 0; i < members.length; i++){
             document.write(members[i].toUpperCase()+"<br>");
         }
+        
+        var li = ['a', 'b', 'c', 'd', 'e'];
+li.push('f');
+alert(li);
+        
+        var li = ['a', 'b', 'c', 'd', 'e'];
+li = li.concat(['f', 'g']);
+alert(li);
+        
+        var li = ['a', 'b', 'c', 'd', 'e'];
+li.unshift('z');
+alert(li);
+        
+        var li = ['a', 'b', 'c', 'd', 'e'];
+li.splice(2, 0, 'B');
+alert(li);
     </script>
 </body>
 </html>
