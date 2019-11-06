@@ -18,20 +18,21 @@
         }
         
         var li = ['a', 'b', 'c', 'd', 'e'];
-li.push('f');
-alert(li);
-        
+        li.push('f');
+        alert(li);
+//        푸시f는 원소를 추가하는데 제일 앞에 추가함
         var li = ['a', 'b', 'c', 'd', 'e'];
-li = li.concat(['f', 'g']);
-alert(li);
-        
+        li = li.concat(['f', 'g']);
+        alert(li);
+//        콘캣은 제일 앞에 추가하는게 푸시랑 동일한데 여러개를 추가할 수 있음
         var li = ['a', 'b', 'c', 'd', 'e'];
-li.unshift('z');
-alert(li);
-        
+        li.unshift('z');
+        alert(li);
+//        언쉬프트는 제일 뒤에 추가함
         var li = ['a', 'b', 'c', 'd', 'e'];
-li.splice(2, 0, 'B');
-alert(li);
+        li.splice(2, 0, 'B');
+        alert(li);
+//        스플라이스는 중간에 추가하는데 제거하면서 추가할 수도 있고 앞에 추가 할 수도 있음
     </script>
 </body>
 </html>
