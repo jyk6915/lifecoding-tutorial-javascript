@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var grades = {'egoing': 10, 'k8805': 6, 'sorialgi': 80};
+//        객체를 한번에 만드는방법 'egoing'은 key라고 부르고 10은 value라고 부른다
+        var grades = {};
+        grades['egoing'] = 10;
+        grades['k8805'] = 6;
+        grades['sorialgi'] = 80;
+//        객체를 만드는 다른방법
+        var grades = new Object();
+        grades['egoing'] = 10;
+        grades['k8805'] = 6;
+        grades['sorialgi'] = 80;
+//        객체를 만드는 또 다른방법인데 위와 유사하다(하나씩 지정해서 만듬)
+        
+        var grades = {'egoing': 10, 'k8805': 6, 'sorialgi': 80};
+        alert(grades['sorialgi']);
+//        객체를 호출하는 방법 위의 값은 80이 나온다
+        alert(grades.sorialgi);
+//        위와 같은 호출하는 방법이지만 .을 써도 되고 []대괄호를 써도 호출이 된다 아래것은 .으로 구분해서 간결하게 작성할 수 있지만 위의 것은 문자열+문자열인 'so'+'rialgi'와 같은 코드의 결합으로도 호출할 수 있어서 두가지를 구분해서 사용할 줄 알아야함
+    </script>
+</body>
+</html>
