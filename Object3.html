@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var grades = {
+            'list': {'egoing': 10, 'k8805': 6, 'sorialgi': 80},
+         'show' : function(){
+                for(var name in this.list){
+            document.write(name+':'+this.list[name]+"<br />");
+        }
+    }
+};
+grades.show();
+//        객체 안에 객체를 넣을 수 도 있다
+//        객체 안에 객체지향프로그래밍 함수를 넣어서 관련있는것을 그루핑 해서 사용할 수 있다
+    </script>
+</body>
+</html>
