@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!--    유효범위(scope)는 변수의 수명을 의미한다-->
+    <script>    
+        var vscope = 'global';
+        var fscope = function(){
+            var vscope = 'local';
+            alert(vscope);
+//            자기자신에 가깝게 선언된 변수로 출력이 되기때문에            global이 아닌 local이 출력된다
+//            지역변수, 전역변수라고 함
+//              local,   global
+//            그 함수를 호출할때만 접근 가능하여 그때만 호출가능하다
+        }
+        fscope();
+        alert(vscope);
+//        var로 선언하지않고 vscope 만 사용하여 'local'로
+//        선언한 경우는 지역변수가 아닌 전역 변수로 선언되어
+//        'global'이 호출된다
+    </script>
+</body>
+</html>
