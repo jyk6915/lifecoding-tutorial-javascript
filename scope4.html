@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i = 5;
+        
+        function a(){
+            var i = 10;
+            b();
+        }
+        
+        function b(){
+            document.write(i);
+        }
+        
+        a();
+//        a를 호출할때 b를 호출하게 되는데
+//        그 b의 변수로서 사용된 i의 값은
+//        b안에 지역변수가 없으므로 전역변수로
+//        넘어가게 되는데 a안에 있는 i는 a의 지역변수이므로
+//        b는 5가 된다
+    </script>
+</body>
+</html>
